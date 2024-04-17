@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #676565;
+  color: #d29999;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+header {
+  background-color: #85605b;
+  box-shadow: 0 2px 4px rgba(230, 23, 23, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+.button {
+  background-color: #c17e78fc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d6a5b1; /* لون زهري أغمق قليلاً */
+}
+
+.main-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+.welcome-text h1, h2 {
+  color: #85605b;
+  background-color: #eecec9; /* خلفية للعناوين */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-icon {
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 90px;
+  background-color: #555;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #d47d93; /* لون زهري أغمق قليلاً */
+  border-radius: 10px;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+  padding: 20px;
+}
+
+.work-item {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  color: #fff; /* لون الخط الأبيض للأزرار */
+}
+
+.work-item:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  color: #eecec9; /* تنسيق لون العناوين ليتماشى مع لون الهيدر */
+  background-color: #401717; /* خلفية داكنة للعناوين */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #85605b;
+  color: #d0d0d0;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.button[aria-current="page"] {
+  background-color: #85605b; /* لون زهري أغمق قليلاً للزر الحالي */
+}
+
+.work-item:nth-child(odd) {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+}
